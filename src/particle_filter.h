@@ -88,8 +88,8 @@ public:
 	 * @param observations Vector of landmark observations
 	 * @param map Map class containing map landmarks
 	 */
-	void updateWeights(double sensor_range, double std_landmark[], const std::vector<LandmarkObs> &observations,
-			const Map &map_landmarks);
+	void updateWeights(double sensor_range, double std_landmark[], const std::vector<LandmarkObs> observations,
+                       const Map map_landmarks);
 	
 	/**
 	 * resample Resamples from the updated set of particles to form
@@ -101,10 +101,11 @@ public:
 	 * Set a particles list of associations, along with the associations calculated world x,y coordinates
 	 * This can be a very useful debugging tool to make sure transformations are correct and assocations correctly connected
 	 */
-	Particle SetAssociations(Particle& particle, const std::vector<int>& associations,
-		                     const std::vector<double>& sense_x, const std::vector<double>& sense_y);
+	Particle SetAssociations(Particle particle, std::vector<int> associations, std::vector<double> sense_x,
+                             std::vector<double> sense_y);
 
-	
+
+
 	std::string getAssociations(Particle best);
 	std::string getSenseX(Particle best);
 	std::string getSenseY(Particle best);
