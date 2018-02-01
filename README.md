@@ -8,7 +8,6 @@ Files modified:
 
 #### Sample runs in simulator
 
-![A successful run]
-(https://www.dropbox.com/s/rr9izmw5usnnt1a/Screenshot%202018-02-01%2006.44.05.png?dl=0)
+![A successful run](https://www.dropbox.com/s/rr9izmw5usnnt1a/Screenshot%202018-02-01%2006.44.05.png?dl=0)
 
 
